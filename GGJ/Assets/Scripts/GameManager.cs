@@ -65,7 +65,7 @@ namespace HoloToolkit.Unity.SpatialMapping.Tests
             loseText.enabled = false;
             gameText.enabled = true;
             getcount = 0;
-            //spawnCreatures();
+            spawnCreatures();
         }
 
         public void endGame(bool win)
