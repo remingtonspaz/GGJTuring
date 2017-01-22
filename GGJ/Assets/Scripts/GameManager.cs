@@ -48,8 +48,7 @@ namespace HoloToolkit.Unity.SpatialMapping.Tests
         public void startGame()
         {
             startPoint.transform.position = playerTransform.position;
-            startPoint.GetComponent<Collider>().enabled = false;
-            startRound(0);
+            startRound(1);
         }
 
         public void startCurrentRound()
@@ -59,12 +58,14 @@ namespace HoloToolkit.Unity.SpatialMapping.Tests
 
         public void startRound(int rnd)
         {
+            startPoint.GetComponent<Collider>().enabled = false;
             round = rnd;
             startText.enabled = false;
             winText.enabled = false;
             loseText.enabled = false;
             gameText.enabled = true;
             getcount = 0;
+            //spawnCreatures();
         }
 
         public void endGame(bool win)
@@ -90,7 +91,7 @@ namespace HoloToolkit.Unity.SpatialMapping.Tests
         {
             int idx = round - 1;
             float diagonal = Mathf.Sqrt(floorScript.width*floorScript.width + floorScript.length*floorScript.length);
-            float chanceMultiplier = diagonal / creatureCountPerRound[idx];
+            float chanceMultiplier = diagonal / (float)creatureCountPerRound[idx];
             GameObject[] creaturesToSpawn = creaturePrefabs[idx].goodBadCreatures;
 
             Vector3 lastPlaced = Vector3.zero;
@@ -99,6 +100,7 @@ namespace HoloToolkit.Unity.SpatialMapping.Tests
 
             foreach (GameObject tile in floorScript.tiles)
             {
+                if (placed >= creatureCountPerRound[idx]) break;
                 float dist = Vector3.Distance(tile.transform.position, lastPlaced);
                 float chance = dist / chanceMultiplier;
 
@@ -128,7 +130,7 @@ namespace HoloToolkit.Unity.SpatialMapping.Tests
                     {
                         tospawn = creaturesToSpawn[1];
                     }
-                    Instantiate(tospawn, new Vector3(tile.transform.position.x, tile.transform.position.y + 1, tile.transform.position.z),
+                    Instantiate(tospawn, new Vector3(tile.transform.position.x, tile.transform.position.y, tile.transform.position.z),
                         Quaternion.identity, null);
                     placed++;
                 }

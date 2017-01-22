@@ -2,9 +2,9 @@
     <PropertyGroup>
         <UnityInstallationDir>D:\Program Files\Unity 5.5\Editor\</UnityInstallationDir>
         <UnityWSASolutionName>GGJ</UnityWSASolutionName>
-        <UnityWSASolutionDir>D:\Documents\Projects\GGJ\GGJ\Build\</UnityWSASolutionDir>
+        <UnityWSASolutionDir>D:\Documents\Projects\GGJ\GGJGithub\GGJ\Build\</UnityWSASolutionDir>
         <UnityWSAPlayerDir>D:\Program Files\Unity 5.5\Editor\Data\PlaybackEngines\MetroSupport\</UnityWSAPlayerDir>
         <UnityWSAToolsDir>$(UnityWSASolutionDir)Unity\Tools\</UnityWSAToolsDir>
-        <UnityProjectDir>D:\Documents\Projects\GGJ\GGJ\</UnityProjectDir>
+        <UnityProjectDir>D:\Documents\Projects\GGJ\GGJGithub\GGJ\</UnityProjectDir>
     </PropertyGroup>
 </Project>

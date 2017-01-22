@@ -1,0 +1,483 @@
+fileFormatVersion: 2
+guid: f09e42bb168a6084d879cfa772a0d91f
+timeCreated: 1485072466
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bot
+    100002: EYE_L
+    100004: eye_L
+    100006: eye_L 1
+    100008: EYE_R
+    100010: eye_R
+    100012: eye_R 1
+    100014: HEAD
+    100016: head
+    100018: ikHandle1
+    100020: JAW_BOT
+    100022: jaw_bot
+    100024: jaw_bot_1
+    100026: JAW_BOT_2
+    100028: jaw_bot_tip
+    100030: JAW_TOP
+    100032: jaw_top
+    100034: jaw_top_tip
+    100036: MASTER
+    100038: pasted__toothL_01
+    100040: pasted__toothL_010
+    100042: pasted__toothL_011
+    100044: pasted__toothL_012
+    100046: pasted__toothL_013
+    100048: pasted__toothL_014
+    100050: pasted__toothL_02
+    100052: pasted__toothL_03
+    100054: pasted__toothL_04
+    100056: pasted__toothL_05
+    100058: pasted__toothL_06
+    100060: pasted__toothL_07
+    100062: pasted__toothL_08
+    100064: pasted__toothL_09
+    100066: pasted__toothR_01
+    100068: pasted__toothR_010
+    100070: pasted__toothR_011
+    100072: pasted__toothR_012
+    100074: pasted__toothR_013
+    100076: pasted__toothR_014
+    100078: pasted__toothR_02
+    100080: pasted__toothR_03
+    100082: pasted__toothR_04
+    100084: pasted__toothR_05
+    100086: pasted__toothR_06
+    100088: pasted__toothR_07
+    100090: pasted__toothR_08
+    100092: pasted__toothR_09
+    100094: SIN_GROUP
+    100096: sine1Handle
+    100098: //RootNode
+    100100: snek
+    100102: snek_geo
+    100104: snek_spine_curve
+    100106: spine1
+    100108: spine10
+    100110: spine11
+    100112: spine12
+    100114: spine13
+    100116: spine14
+    100118: spine15
+    100120: spine16
+    100122: spine17
+    100124: spine18
+    100126: spine19
+    100128: spine2
+    100130: spine20
+    100132: spine21
+    100134: spine22
+    100136: spine3
+    100138: spine4
+    100140: spine5
+    100142: spine6
+    100144: spine7
+    100146: spine8
+    100148: spine9
+    100150: spine_base
+    100152: spine_tip
+    100154: teeth_group
+    100156: top
+    400000: bot
+    400002: EYE_L
+    400004: eye_L
+    400006: eye_L 1
+    400008: EYE_R
+    400010: eye_R
+    400012: eye_R 1
+    400014: HEAD
+    400016: head
+    400018: ikHandle1
+    400020: JAW_BOT
+    400022: jaw_bot
+    400024: jaw_bot_1
+    400026: JAW_BOT_2
+    400028: jaw_bot_tip
+    400030: JAW_TOP
+    400032: jaw_top
+    400034: jaw_top_tip
+    400036: MASTER
+    400038: pasted__toothL_01
+    400040: pasted__toothL_010
+    400042: pasted__toothL_011
+    400044: pasted__toothL_012
+    400046: pasted__toothL_013
+    400048: pasted__toothL_014
+    400050: pasted__toothL_02
+    400052: pasted__toothL_03
+    400054: pasted__toothL_04
+    400056: pasted__toothL_05
+    400058: pasted__toothL_06
+    400060: pasted__toothL_07
+    400062: pasted__toothL_08
+    400064: pasted__toothL_09
+    400066: pasted__toothR_01
+    400068: pasted__toothR_010
+    400070: pasted__toothR_011
+    400072: pasted__toothR_012
+    400074: pasted__toothR_013
+    400076: pasted__toothR_014
+    400078: pasted__toothR_02
+    400080: pasted__toothR_03
+    400082: pasted__toothR_04
+    400084: pasted__toothR_05
+    400086: pasted__toothR_06
+    400088: pasted__toothR_07
+    400090: pasted__toothR_08
+    400092: pasted__toothR_09
+    400094: SIN_GROUP
+    400096: sine1Handle
+    400098: //RootNode
+    400100: snek
+    400102: snek_geo
+    400104: snek_spine_curve
+    400106: spine1
+    400108: spine10
+    400110: spine11
+    400112: spine12
+    400114: spine13
+    400116: spine14
+    400118: spine15
+    400120: spine16
+    400122: spine17
+    400124: spine18
+    400126: spine19
+    400128: spine2
+    400130: spine20
+    400132: spine21
+    400134: spine22
+    400136: spine3
+    400138: spine4
+    400140: spine5
+    400142: spine6
+    400144: spine7
+    400146: spine8
+    400148: spine9
+    400150: spine_base
+    400152: spine_tip
+    400154: teeth_group
+    400156: top
+    4300000: pasted__toothR_09
+    4300002: pasted__toothR_010
+    4300004: pasted__toothR_012
+    4300006: pasted__toothR_013
+    4300008: pasted__toothR_014
+    4300010: pasted__toothL_09
+    4300012: pasted__toothL_010
+    4300014: pasted__toothL_012
+    4300016: pasted__toothL_013
+    4300018: pasted__toothL_014
+    4300020: pasted__toothL_011
+    4300022: pasted__toothR_011
+    4300024: pasted__toothR_08
+    4300026: pasted__toothL_08
+    4300028: pasted__toothR_01
+    4300030: pasted__toothR_02
+    4300032: pasted__toothR_03
+    4300034: pasted__toothR_05
+    4300036: pasted__toothR_06
+    4300038: pasted__toothL_01
+    4300040: pasted__toothL_02
+    4300042: pasted__toothL_03
+    4300044: pasted__toothL_05
+    4300046: pasted__toothL_06
+    4300048: pasted__toothR_07
+    4300050: pasted__toothL_07
+    4300052: pasted__toothR_04
+    4300054: pasted__toothL_04
+    4300056: snek_geo
+    4300058: eye_L
+    4300060: eye_R
+    7400000: idle
+    9500000: //RootNode
+    13700000: eye_L
+    13700002: eye_R
+    13700004: pasted__toothL_01
+    13700006: pasted__toothL_010
+    13700008: pasted__toothL_011
+    13700010: pasted__toothL_012
+    13700012: pasted__toothL_013
+    13700014: pasted__toothL_014
+    13700016: pasted__toothL_02
+    13700018: pasted__toothL_03
+    13700020: pasted__toothL_04
+    13700022: pasted__toothL_05
+    13700024: pasted__toothL_06
+    13700026: pasted__toothL_07
+    13700028: pasted__toothL_08
+    13700030: pasted__toothL_09
+    13700032: pasted__toothR_01
+    13700034: pasted__toothR_010
+    13700036: pasted__toothR_011
+    13700038: pasted__toothR_012
+    13700040: pasted__toothR_013
+    13700042: pasted__toothR_014
+    13700044: pasted__toothR_02
+    13700046: pasted__toothR_03
+    13700048: pasted__toothR_04
+    13700050: pasted__toothR_05
+    13700052: pasted__toothR_06
+    13700054: pasted__toothR_07
+    13700056: pasted__toothR_08
+    13700058: pasted__toothR_09
+    13700060: snek_geo
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: MASTER
+        weight: 1
+      - path: MASTER/HEAD
+        weight: 1
+      - path: MASTER/HEAD/EYE_L
+        weight: 1
+      - path: MASTER/HEAD/EYE_R
+        weight: 1
+      - path: MASTER/HEAD/JAW_BOT
+        weight: 1
+      - path: MASTER/HEAD/JAW_BOT/JAW_BOT_2
+        weight: 1
+      - path: MASTER/HEAD/JAW_TOP
+        weight: 1
+      - path: MASTER/SIN_GROUP
+        weight: 1
+      - path: MASTER/SIN_GROUP/ikHandle1
+        weight: 1
+      - path: MASTER/SIN_GROUP/sine1Handle
+        weight: 1
+      - path: MASTER/SIN_GROUP/snek_spine_curve
+        weight: 1
+      - path: snek
+        weight: 1
+      - path: snek/eye_L
+        weight: 1
+      - path: snek/eye_R
+        weight: 1
+      - path: snek/snek_geo
+        weight: 1
+      - path: snek/teeth_group
+        weight: 1
+      - path: snek/teeth_group/bot
+        weight: 1
+      - path: snek/teeth_group/bot/pasted__toothL_01
+        weight: 1
+      - path: snek/teeth_group/bot/pasted__toothL_02
+        weight: 1
+      - path: snek/teeth_group/bot/pasted__toothL_03
+        weight: 1
+      - path: snek/teeth_group/bot/pasted__toothL_04
+        weight: 1
+      - path: snek/teeth_group/bot/pasted__toothL_05
+        weight: 1
+      - path: snek/teeth_group/bot/pasted__toothL_06
+        weight: 1
+      - path: snek/teeth_group/bot/pasted__toothL_07
+        weight: 1
+      - path: snek/teeth_group/bot/pasted__toothR_01
+        weight: 1
+      - path: snek/teeth_group/bot/pasted__toothR_02
+        weight: 1
+      - path: snek/teeth_group/bot/pasted__toothR_03
+        weight: 1
+      - path: snek/teeth_group/bot/pasted__toothR_04
+        weight: 1
+      - path: snek/teeth_group/bot/pasted__toothR_05
+        weight: 1
+      - path: snek/teeth_group/bot/pasted__toothR_06
+        weight: 1
+      - path: snek/teeth_group/bot/pasted__toothR_07
+        weight: 1
+      - path: snek/teeth_group/top
+        weight: 1
+      - path: snek/teeth_group/top/pasted__toothL_08
+        weight: 1
+      - path: snek/teeth_group/top/pasted__toothL_09
+        weight: 1
+      - path: snek/teeth_group/top/pasted__toothL_010
+        weight: 1
+      - path: snek/teeth_group/top/pasted__toothL_011
+        weight: 1
+      - path: snek/teeth_group/top/pasted__toothL_012
+        weight: 1
+      - path: snek/teeth_group/top/pasted__toothL_013
+        weight: 1
+      - path: snek/teeth_group/top/pasted__toothL_014
+        weight: 1
+      - path: snek/teeth_group/top/pasted__toothR_08
+        weight: 1
+      - path: snek/teeth_group/top/pasted__toothR_09
+        weight: 1
+      - path: snek/teeth_group/top/pasted__toothR_010
+        weight: 1
+      - path: snek/teeth_group/top/pasted__toothR_011
+        weight: 1
+      - path: snek/teeth_group/top/pasted__toothR_012
+        weight: 1
+      - path: snek/teeth_group/top/pasted__toothR_013
+        weight: 1
+      - path: snek/teeth_group/top/pasted__toothR_014
+        weight: 1
+      - path: spine_base
+        weight: 1
+      - path: spine_base/head
+        weight: 1
+      - path: spine_base/head/jaw_bot
+        weight: 1
+      - path: spine_base/head/jaw_bot/jaw_bot_1
+        weight: 1
+      - path: spine_base/head/jaw_bot/jaw_bot_1/jaw_bot_tip
+        weight: 1
+      - path: spine_base/head/jaw_top
+        weight: 1
+      - path: spine_base/head/jaw_top/eye_L 1
+        weight: 1
+      - path: spine_base/head/jaw_top/eye_R 1
+        weight: 1
+      - path: spine_base/head/jaw_top/jaw_top_tip
+        weight: 1
+      - path: spine_base/spine1
+        weight: 1
+      - path: spine_base/spine1/spine2
+        weight: 1
+      - path: spine_base/spine1/spine2/spine3
+        weight: 1
+      - path: spine_base/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: spine_base/spine1/spine2/spine3/spine4/spine5
+        weight: 1
+      - path: spine_base/spine1/spine2/spine3/spine4/spine5/spine6
+        weight: 1
+      - path: spine_base/spine1/spine2/spine3/spine4/spine5/spine6/spine7
+        weight: 1
+      - path: spine_base/spine1/spine2/spine3/spine4/spine5/spine6/spine7/spine8
+        weight: 1
+      - path: spine_base/spine1/spine2/spine3/spine4/spine5/spine6/spine7/spine8/spine9
+        weight: 1
+      - path: spine_base/spine1/spine2/spine3/spine4/spine5/spine6/spine7/spine8/spine9/spine10
+        weight: 1
+      - path: spine_base/spine1/spine2/spine3/spine4/spine5/spine6/spine7/spine8/spine9/spine10/spine11
+        weight: 1
+      - path: spine_base/spine1/spine2/spine3/spine4/spine5/spine6/spine7/spine8/spine9/spine10/spine11/spine12
+        weight: 1
+      - path: spine_base/spine1/spine2/spine3/spine4/spine5/spine6/spine7/spine8/spine9/spine10/spine11/spine12/spine13
+        weight: 1
+      - path: spine_base/spine1/spine2/spine3/spine4/spine5/spine6/spine7/spine8/spine9/spine10/spine11/spine12/spine13/spine14
+        weight: 1
+      - path: spine_base/spine1/spine2/spine3/spine4/spine5/spine6/spine7/spine8/spine9/spine10/spine11/spine12/spine13/spine14/spine15
+        weight: 1
+      - path: spine_base/spine1/spine2/spine3/spine4/spine5/spine6/spine7/spine8/spine9/spine10/spine11/spine12/spine13/spine14/spine15/spine16
+        weight: 1
+      - path: spine_base/spine1/spine2/spine3/spine4/spine5/spine6/spine7/spine8/spine9/spine10/spine11/spine12/spine13/spine14/spine15/spine16/spine17
+        weight: 1
+      - path: spine_base/spine1/spine2/spine3/spine4/spine5/spine6/spine7/spine8/spine9/spine10/spine11/spine12/spine13/spine14/spine15/spine16/spine17/spine18
+        weight: 1
+      - path: spine_base/spine1/spine2/spine3/spine4/spine5/spine6/spine7/spine8/spine9/spine10/spine11/spine12/spine13/spine14/spine15/spine16/spine17/spine18/spine19
+        weight: 1
+      - path: spine_base/spine1/spine2/spine3/spine4/spine5/spine6/spine7/spine8/spine9/spine10/spine11/spine12/spine13/spine14/spine15/spine16/spine17/spine18/spine19/spine20
+        weight: 1
+      - path: spine_base/spine1/spine2/spine3/spine4/spine5/spine6/spine7/spine8/spine9/spine10/spine11/spine12/spine13/spine14/spine15/spine16/spine17/spine18/spine19/spine20/spine21
+        weight: 1
+      - path: spine_base/spine1/spine2/spine3/spine4/spine5/spine6/spine7/spine8/spine9/spine10/spine11/spine12/spine13/spine14/spine15/spine16/spine17/spine18/spine19/spine20/spine21/spine22
+        weight: 1
+      - path: spine_base/spine1/spine2/spine3/spine4/spine5/spine6/spine7/spine8/spine9/spine10/spine11/spine12/spine13/spine14/spine15/spine16/spine17/spine18/spine19/spine20/spine21/spine22/spine_tip
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

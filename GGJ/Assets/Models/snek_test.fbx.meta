@@ -45,6 +45,37 @@ ModelImporter:
     100074: //RootNode
     100076: teeth_group
     100078: top
+    100080: eye_L
+    100082: eye_L 1
+    100084: eye_R
+    100086: eye_R 1
+    100088: head
+    100090: jaw_bot
+    100092: jaw_bot_1
+    100094: jaw_top
+    100096: spine1
+    100098: spine10
+    100100: spine11
+    100102: spine12
+    100104: spine13
+    100106: spine14
+    100108: spine15
+    100110: spine16
+    100112: spine17
+    100114: spine18
+    100116: spine19
+    100118: spine2
+    100120: spine20
+    100122: spine21
+    100124: spine22
+    100126: spine3
+    100128: spine4
+    100130: spine5
+    100132: spine6
+    100134: spine7
+    100136: spine8
+    100138: spine9
+    100140: spine_base
     400000: bot
     400002: group1
     400004: group2
@@ -85,6 +116,37 @@ ModelImporter:
     400074: //RootNode
     400076: teeth_group
     400078: top
+    400080: eye_L
+    400082: eye_L 1
+    400084: eye_R
+    400086: eye_R 1
+    400088: head
+    400090: jaw_bot
+    400092: jaw_bot_1
+    400094: jaw_top
+    400096: spine1
+    400098: spine10
+    400100: spine11
+    400102: spine12
+    400104: spine13
+    400106: spine14
+    400108: spine15
+    400110: spine16
+    400112: spine17
+    400114: spine18
+    400116: spine19
+    400118: spine2
+    400120: spine20
+    400122: spine21
+    400124: spine22
+    400126: spine3
+    400128: spine4
+    400130: spine5
+    400132: spine6
+    400134: spine7
+    400136: spine8
+    400138: spine9
+    400140: spine_base
     2300000: pasted__toothL_01
     2300002: pasted__toothL_010
     2300004: pasted__toothL_011
@@ -116,6 +178,8 @@ ModelImporter:
     2300056: pSphere1
     2300058: pSphere2
     2300060: snek_geo
+    2300062: eye_L
+    2300064: eye_R
     3300000: pasted__toothL_01
     3300002: pasted__toothL_010
     3300004: pasted__toothL_011
@@ -147,6 +211,8 @@ ModelImporter:
     3300056: pSphere1
     3300058: pSphere2
     3300060: snek_geo
+    3300062: eye_L
+    3300064: eye_R
     4300000: pSphere1
     4300002: pasted__toothR_09
     4300004: pasted__toothR_010
@@ -178,6 +244,8 @@ ModelImporter:
     4300056: pasted__toothR_04
     4300058: snek_geo
     4300060: pSphere2
+    4300062: eye_L
+    4300064: eye_R
   materials:
     importMaterials: 1
     materialName: 0

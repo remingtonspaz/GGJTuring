@@ -536,11 +536,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 592fcd208731ae44b8a9869c50d8a957, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 1
   SpatializePostEffects: 0
@@ -619,6 +619,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bad: 0
+  goodClip: {fileID: 8300000, guid: 592fcd208731ae44b8a9869c50d8a957, type: 3}
+  badClip: {fileID: 8300000, guid: 95bfe444000f3224c9a71e94e6ccc283, type: 3}
 --- !u!135 &135704243681661912
 SphereCollider:
   m_ObjectHideFlags: 1

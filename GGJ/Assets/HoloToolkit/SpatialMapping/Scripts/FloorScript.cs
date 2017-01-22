@@ -44,6 +44,7 @@ namespace HoloToolkit.Unity.SpatialMapping.Tests
             floors = SurfaceMeshesToPlanes.Instance.GetActivePlanes(PlaneTypes.Floor);
 
             createTiles();
+            GameManager.instance.startGame();
         }
 
         void getLargestFloor()

@@ -140,9 +140,18 @@ Prefab:
       propertyPath: m_HDR
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011021619270, guid: d379ed0a5618c9f479f58bd83a2d0ad3, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d379ed0a5618c9f479f58bd83a2d0ad3, type: 2}
   m_IsPrefabParent: 0
+--- !u!20 &152182123 stripped
+Camera:
+  m_PrefabParentObject: {fileID: 20000013304850028, guid: d379ed0a5618c9f479f58bd83a2d0ad3,
+    type: 2}
+  m_PrefabInternal: {fileID: 152182122}
 --- !u!21 &315222189
 Material:
   serializedVersion: 6
@@ -383,7 +392,8 @@ Prefab:
         type: 2}
       propertyPath: RoomModel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1474033978489156, guid: 7014f1aaec7296342afcd7f95f965b99,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ed75ffdf9031c94e8bce4b3d17b9928, type: 2}
   m_IsPrefabParent: 0
@@ -602,7 +612,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 384a0d8cc71cef74a873b3353337ea2c, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 384a0d8cc71cef74a873b3353337ea2c, type: 2}
       propertyPath: m_Materials.Array.data[0]
@@ -718,8 +728,8 @@ Canvas:
   m_GameObject: {fileID: 1252511615}
   m_Enabled: 1
   serializedVersion: 2
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 2
+  m_Camera: {fileID: 152182123}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -735,22 +745,22 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1252511615}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 3.07}
+  m_LocalScale: {x: 0.008631903, y: 0.008631903, z: 0.008631903}
   m_Children:
   - {fileID: 388980696}
   - {fileID: 713541475}
   - {fileID: 386883085}
   - {fileID: 1882779758}
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 641948052}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.03, y: -0.05}
+  m_SizeDelta: {x: 604, y: 318}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1291510181
 GameObject:
   m_ObjectHideFlags: 0
@@ -3489,6 +3499,7 @@ GameObject:
   - component: {fileID: 1483352892}
   - component: {fileID: 1483352891}
   - component: {fileID: 1483352890}
+  - component: {fileID: 1483352893}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -3539,8 +3550,28 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1483352893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1483352889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 911850839, guid: f7b54ff4a43d4fcf81b4538b678e0bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+  m_NormalizedNavigationToScreenOffsetScalar: 500
+  m_TimeToPressOnTap: 0.3
 --- !u!1 &1499904542
 GameObject:
   m_ObjectHideFlags: 0
@@ -3670,7 +3701,7 @@ Transform:
   m_Children:
   - {fileID: 1291510182}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1619306581
 Prefab:
@@ -3709,7 +3740,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: mWorldCenterMode
@@ -4230,25 +4261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RecognizerStart: 0
-  KeywordsAndResponses:
-  - Keyword: start
-    KeyCode: 0
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2116021331}
-          m_MethodName: startGame
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
+  KeywordsAndResponses: []
 --- !u!114 &2116021331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4260,15 +4273,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be0d1075d67698b4f9c908087a5dd1be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPoint: {fileID: 0}
-  startText: {fileID: 0}
-  loseText: {fileID: 0}
-  winText: {fileID: 0}
-  gameText: {fileID: 0}
-  creaturePrefabs: []
-  floorScript: {fileID: 0}
-  playerTransform: {fileID: 0}
-  creatureCountPerRound: 
+  startPoint: {fileID: 1570239742}
+  startText: {fileID: 388980697}
+  loseText: {fileID: 713541476}
+  winText: {fileID: 386883086}
+  gameText: {fileID: 1882779759}
+  creaturePrefabs:
+  - goodBadCreatures:
+    - {fileID: 1264538262560260, guid: 938c1b571ccf43e43b703e1177e1a50e, type: 2}
+    - {fileID: 1646593896871076, guid: 06a59c8bcefe57443a31b48e4cf2f2e8, type: 2}
+  - goodBadCreatures:
+    - {fileID: 1459019667813480, guid: f5490ecf10c6a0f43b1454fec0904f0b, type: 2}
+    - {fileID: 1069004461611352, guid: 3d3a4f3a4efb6704386297d4c8e7e1d2, type: 2}
+  - goodBadCreatures:
+    - {fileID: 1402989226006890, guid: d51e2176d4b4c77409da27b4d949f07e, type: 2}
+    - {fileID: 1740363835512338, guid: 5a854dfc3d39bfb4a83248ff3afd65e8, type: 2}
+  floorScript: {fileID: 1923432193}
+  playerTransform: {fileID: 641948052}
+  creatureCountPerRound: 010000000300000005000000
 --- !u!4 &2116021332
 Transform:
   m_ObjectHideFlags: 0
@@ -4281,7 +4303,7 @@ Transform:
   m_Children:
   - {fileID: 1444528115}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2116021333
 MonoBehaviour:
