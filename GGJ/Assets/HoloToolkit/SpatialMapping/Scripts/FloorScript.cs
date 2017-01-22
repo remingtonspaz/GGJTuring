@@ -12,6 +12,23 @@ namespace HoloToolkit.Unity.SpatialMapping.Tests
         public List<GameObject> tiles;
         public Material largestFloorMaterial;
         List<GameObject> floors;
+        GameObject largestFloor;
+
+        public float width
+        {
+            get
+            {
+                return largestFloor.GetComponent<MeshRenderer>().bounds.size.x;
+            }
+        }
+
+        public float length
+        {
+            get
+            {
+                return largestFloor.GetComponent<MeshRenderer>().bounds.size.z;
+            }
+        }
 
         // Use this for initialization
         void Start()
@@ -29,9 +46,9 @@ namespace HoloToolkit.Unity.SpatialMapping.Tests
             createTiles();
         }
 
-        GameObject getLargestFloor()
+        void getLargestFloor()
         {
-            GameObject largestFloor = null;
+            largestFloor = null;
             float largestVolume = float.MinValue;
 
             foreach (GameObject floor in floors)
@@ -46,12 +63,11 @@ namespace HoloToolkit.Unity.SpatialMapping.Tests
             }
 
             largestFloor.GetComponent<MeshRenderer>().material = largestFloorMaterial;
-            return largestFloor;
         }
 
         void createTiles()
         {
-            GameObject largestFloor = getLargestFloor();
+            getLargestFloor();
             MeshRenderer floorRenderer = largestFloor.GetComponent<MeshRenderer>();
             float width = floorRenderer.bounds.size.x;
             float length = floorRenderer.bounds.size.z;

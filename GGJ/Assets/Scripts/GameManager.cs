@@ -5,6 +5,12 @@ using UnityEngine.UI;
 
 namespace HoloToolkit.Unity.SpatialMapping.Tests
 {
+    [System.Serializable]
+    public class CreaturePrefabs
+    {
+        public GameObject[] goodBadCreatures;
+    }
+
     public class GameManager : MonoBehaviour
     {
 
@@ -14,13 +20,13 @@ namespace HoloToolkit.Unity.SpatialMapping.Tests
         public Text loseText;
         public Text winText;
         public Text gameText;
-        public GameObject[] goodCreaturePrefabs;
-        public GameObject[] badCreaturePrefabs;
+        public CreaturePrefabs[] creaturePrefabs;
         public FloorScript floorScript;
         public Transform playerTransform;
         public int[] creatureCountPerRound;
 
         int round;
+        int getcount;
 
         // Use this for initialization
         void Start()
@@ -43,10 +49,22 @@ namespace HoloToolkit.Unity.SpatialMapping.Tests
         {
             startPoint.transform.position = playerTransform.position;
             startPoint.GetComponent<Collider>().enabled = false;
+            startRound(0);
+        }
+
+        public void startCurrentRound()
+        {
+            startRound(round);
+        }
+
+        public void startRound(int rnd)
+        {
+            round = rnd;
             startText.enabled = false;
             winText.enabled = false;
             loseText.enabled = false;
             gameText.enabled = true;
+            getcount = 0;
         }
 
         public void endGame(bool win)
@@ -57,6 +75,7 @@ namespace HoloToolkit.Unity.SpatialMapping.Tests
                 winText.enabled = true;
                 loseText.enabled = false;
                 gameText.enabled = false;
+                startPoint.GetComponent<Collider>().enabled = true;
             }
             else
             {
@@ -69,12 +88,56 @@ namespace HoloToolkit.Unity.SpatialMapping.Tests
 
         void spawnCreatures()
         {
+            int idx = round - 1;
+            float diagonal = Mathf.Sqrt(floorScript.width*floorScript.width + floorScript.length*floorScript.length);
+            float chanceMultiplier = diagonal / creatureCountPerRound[idx];
+            GameObject[] creaturesToSpawn = creaturePrefabs[idx].goodBadCreatures;
 
+            Vector3 lastPlaced = Vector3.zero;
+            bool goodplaced = false;
+            int placed = 0;
+
+            foreach (GameObject tile in floorScript.tiles)
+            {
+                float dist = Vector3.Distance(tile.transform.position, lastPlaced);
+                float chance = dist / chanceMultiplier;
+
+                Random.InitState(Mathf.RoundToInt(tile.transform.position.x * tile.transform.position.z));
+                if (Random.Range(0.0f,1.0f) < chance)
+                {
+                    GameObject tospawn;
+                    if (!goodplaced)
+                    {
+                        if (placed == creatureCountPerRound[idx] - 1)
+                        {
+                            tospawn = creaturesToSpawn[0];
+                            goodplaced = true;
+                        }
+                        else
+                        {
+                            if (Random.Range(0, 100) < 50)
+                            {
+                                tospawn = creaturesToSpawn[0];
+                                goodplaced = true;
+                            }else
+                            {
+                                tospawn = creaturesToSpawn[1];
+                            }
+                        }
+                    }else
+                    {
+                        tospawn = creaturesToSpawn[1];
+                    }
+                    Instantiate(tospawn, new Vector3(tile.transform.position.x, tile.transform.position.y + 1, tile.transform.position.z),
+                        Quaternion.identity, null);
+                    placed++;
+                }
+            }
         }
 
         public void getGoodCreature()
         {
-
+            endGame(true);
         }
     }
 }

@@ -3982,7 +3982,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Good creatures collected: (0/3)'
+  m_Text: Get the good creature!
 --- !u!222 &1882779760
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4265,12 +4265,10 @@ MonoBehaviour:
   loseText: {fileID: 0}
   winText: {fileID: 0}
   gameText: {fileID: 0}
-  goodCreatureCount: 0
-  badCreatureCount: 0
-  goodCreaturePrefabs: []
-  badCreaturePrefabs: []
+  creaturePrefabs: []
   floorScript: {fileID: 0}
   playerTransform: {fileID: 0}
+  creatureCountPerRound: 
 --- !u!4 &2116021332
 Transform:
   m_ObjectHideFlags: 0
