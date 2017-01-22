@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1740363835512338}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.43, y: -0.486, z: 4.56}
+  m_LocalPosition: {x: 5.808295, y: -1.1134531, z: 2.50502}
   m_LocalScale: {x: 4.6335926, y: 4.633594, z: 4.633594}
   m_Children: []
   m_Father: {fileID: 0}
@@ -101,8 +101,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 3
+  MinDistance: 0.2
+  MaxDistance: 1.25
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80f31bf5c5a50fd4b8b8411804b98c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bad: 0
+  bad: 1
   goodClip: {fileID: 8300000, guid: 592fcd208731ae44b8a9869c50d8a957, type: 3}
   badClip: {fileID: 8300000, guid: 95bfe444000f3224c9a71e94e6ccc283, type: 3}
 --- !u!135 &135210516392656910
@@ -183,8 +183,8 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1740363835512338}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.07
+  m_Radius: 0.05
   m_Center: {x: 0, y: 0.0035786347, z: 0.006535347}

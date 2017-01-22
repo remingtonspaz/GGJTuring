@@ -49,8 +49,10 @@ namespace HoloToolkit.Unity.SpatialMapping.Tests
 
         void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.tag == "MainCamera")
+            Debug.Log("hit player");
+            if (other.CompareTag("MainCamera"))
             {
+                
                 if (bad)
                 {
                     GameManager.instance.endGame(false);
