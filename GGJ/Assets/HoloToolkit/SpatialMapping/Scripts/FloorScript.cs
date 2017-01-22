@@ -9,12 +9,14 @@ namespace HoloToolkit.Unity.SpatialMapping.Tests
 
         public float floorTileSize = 1.0f;
         public GameObject tilePrefab;
+        public List<GameObject> tiles;
         public Material largestFloorMaterial;
         List<GameObject> floors;
 
         // Use this for initialization
         void Start()
         {
+            tiles = new List<GameObject>();
             SurfaceMeshesToPlanes.Instance.MakePlanesComplete += SurfaceMeshesToPlanes_MakePlanesComplete;
         }
 
@@ -69,6 +71,7 @@ namespace HoloToolkit.Unity.SpatialMapping.Tests
                     tileObject.transform.localScale = new Vector3(floorTileSize, .1f, floorTileSize);
                     tileObject.GetComponent<MeshRenderer>().material.color = (white) ? Color.white : Color.black;
                     white = !white;
+                    tiles.Add(tileObject);
                 }
                 white = !startwhite;
             }
